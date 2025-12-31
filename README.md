@@ -61,7 +61,8 @@
 ```bash
 # 测试推送
 curl "[https://bark.yourdomain.com/YOUR_KEY/Hello_from_ClawCloud](https://bark.yourdomain.com/YOUR_KEY/Hello_from_ClawCloud)"
-🏗️ 构建说明
+
+## 🏗️ 构建说明
 本项目使用多阶段构建（Multi-stage Build）：
 基础镜像：debian:stable-slim
 组件：从官方 finab/bark-server 和 cloudflare/cloudflared 镜像中提取二进制文件。
