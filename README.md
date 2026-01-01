@@ -24,7 +24,7 @@
 ### 2. 在 ClawCloud 部署
 在 ClawCloud 容器管理界面中配置：
 
-- **镜像 (Image)**: `ghcr.io/你的GitHub用户名/你的仓库名:latest`
+- **镜像 (Image)**: `ghcr.io/libre0404/docker_bark:latest`
 - **环境变量 (Env)**: 
   - `TUNNEL_TOKEN`: `你刚才复制的 Token`
 - **持久化挂载 (Volume)**:
@@ -67,7 +67,7 @@ curl "[https://bark.yourdomain.com/YOUR_KEY/Hello_from_ClawCloud](https://bark.y
 # 🏗️ **构建说明**
 本项目使用多阶段构建（Multi-stage Build）：
 
-基础镜像：debian:stable-slim
+基础镜像：Alpine Linux (Latest)
 
 核心组件：从官方 finab/bark-server 和 cloudflare/cloudflared 镜像中提取二进制文件。
 
